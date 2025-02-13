@@ -18,6 +18,7 @@ class Tower:
     def info(self, user_id, m: Message):
         player = db.read("user_id", user_id)
         txt = f"{player[1]}, у башни, которую ты защищаешь {player[2]} прочности и {player[-1]} единиц атаки"
+        print(1, 2, sep="__", end="!!!")
         bot.send_message(m.chat.id, txt)
 
 
